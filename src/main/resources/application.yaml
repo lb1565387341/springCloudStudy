@@ -22,3 +22,19 @@ book:
   name: SpringCloudinAction
   author: liubei
   desc: ${book.au七hor} is writing《${book.name}》
+
+#  spring actuator配置：
+# https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator
+#  1.endpoint需要同时满足enable+expose（可用+暴露）才能使用
+#  2.expose分jmx暴露/web暴露
+#  3.默认所有端点除了shutdown（优雅关闭应用）都enable
+#  默认所有端点除了health都不web暴露，绝大部分端点都可通过jmx暴露
+management:
+  endpoints:
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
+    web:
+      exposure:
+        include: "*"

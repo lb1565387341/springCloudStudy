@@ -33,7 +33,9 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!--引入监控模块-->
+		<!--引入监控模块
+		https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator
+		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>

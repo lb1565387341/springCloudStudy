@@ -1,4 +1,4 @@
-package com.didispace.springcloudstudy.web;
+package com.didispace.springcloudstudy.web.conttroller;
 
 import com.didispace.springcloudstudy.entity.Book;
 import lombok.extern.slf4j.Slf4j;

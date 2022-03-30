@@ -1,6 +1,6 @@
-package com.didispace.springcloudstudy;
+package springcloudstudy;
 
-import com.didispace.serverprovider.web.conttroller.HelloController;
+import com.didispace.springcloudstudy.web.conttroller.HelloController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

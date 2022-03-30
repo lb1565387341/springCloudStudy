@@ -6,6 +6,7 @@
 	<modules>
 		<module>eureka-server</module>
 		<module>server-provider</module>
+		<module>spring-boot</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

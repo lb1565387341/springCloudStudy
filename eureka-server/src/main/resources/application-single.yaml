@@ -7,7 +7,7 @@ eureka:
     # 提供给注册中心 true： hostname false：ip （默认false，提供给注册中心的是当前hostname，服务调用方会按hostname调用服务，true则按ip调用）
     prefer-ip-address: true
     # 实例id（一个service下可能有多个实例提供相同服务，在相同的服务下此id需要唯一。默认按 系统用户名+hostname+port）
-    instance-id: heiheihei
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     # 单节点下面两个配置不需要启用
     # 本机不注册到注册中心（自己就是注册中心，不需要注册自己）
